@@ -1,0 +1,7 @@
+<view class='container'>
+  <view class='list'>
+    <view class='list-item'>
+      <list></list>
+    </view>
+  </view>
+</view>

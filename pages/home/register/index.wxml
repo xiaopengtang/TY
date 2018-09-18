@@ -1,0 +1,27 @@
+
+  <view class='form'>
+    <form bindsubmit="formSubmit">
+      <view class='input-group'>
+        <view class="section">
+          <view class="section__title">用户名</view>
+          <input name="input" placeholder="please input here" />
+        </view>
+        <view class="section">
+          <view class="section__title">密码</view>
+          <input name="input" placeholder="please input here" />
+        </view>
+        <view class="section">
+          <view class="section__title">确认密码</view>
+          <input name="input" placeholder="please input here" />
+        </view>
+        <view class="section">
+          <view class="section__title">手机号</view>
+          <input name="input" placeholder="please input here" />
+        </view>
+      </view>
+      <view class="btn-area">
+        <button formType="submit" type='primary'>注册</button>
+      </view>
+    </form>
+  </view>
+
