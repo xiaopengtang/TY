@@ -1,0 +1,38 @@
+.poster{}
+.poster image{
+  min-width: 100%;
+}
+swiper{
+  height: auto;
+}
+.info{
+  padding: 24rpx 30rpx;
+  background-color: #FFF;
+}
+.price{
+  
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  font-size: 28rpx;
+  line-height: 1.2;
+  padding-top: 24rpx;
+}
+.sub-txt{
+  padding: 24rpx 0;
+  line-height: 1.2;
+  font-size: 24rpx;
+  color: gray;
+}
+.check-num{
+  font-size: 28rpx;
+}
+.price-txt{
+  font-size: 36rpx;
+  color: red;
+}
+.visit{
+  padding-top: 24rpx;
+  border-top: 1rpx solid #e6e6e6;
+}

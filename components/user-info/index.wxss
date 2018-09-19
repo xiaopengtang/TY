@@ -1,0 +1,25 @@
+.user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.city{
+  color: blue;
+  font-size: 24rpx;
+}
+.user-info image{
+  
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 48rpx;
+}
+
+.user-nickname{
+  padding-left: 10rpx;
+  font-size: 24rpx;
+}
