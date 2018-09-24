@@ -1,0 +1,20 @@
+<form bindsubmit="submit">
+  <layout>
+    <view class='content'>
+      <view class='input-name'>
+        <input name="input" placeholder="请输入名称" />
+      </view>
+      <view class='input-des'>
+        <textarea  name="input" placeholder="请输入描述"></textarea>
+      </view>
+      <view class='add-poster'></view>
+      <view class='input-switch'>
+        <switch />
+      </view>
+      <view class='cate'></view>
+    </view>
+    <view slot="footer">
+      <button formType="submit" type='primary'>发布</button>
+    </view>
+  </layout>
+</form>

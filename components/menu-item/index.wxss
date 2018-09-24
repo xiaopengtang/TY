@@ -1,0 +1,17 @@
+.menu-item{
+  width: 25%;
+  float: left;
+}
+
+.menu-item-content{
+  text-align: center;
+  vertical-align: bottom;
+}
+.menu-item-content image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.menu-txt{
+  font-size: 28rpx;
+  text-align: center;
+}

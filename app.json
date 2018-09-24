@@ -1,11 +1,14 @@
 {
   "pages":[
+    "pages/home/publish/index",
+    "pages/index/index",
     "pages/home/order/index",
     "pages/home/register/index",
     "pages/home/list/list",
     "pages/user/index",
-    "pages/index/index",
     "pages/logs/logs"
+    
+    
     
   ],
   "window":{

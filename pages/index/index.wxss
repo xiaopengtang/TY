@@ -19,3 +19,60 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.menu-list{
+  padding: 24rpx 30rpx;
+  background-color: #FFFFFF;
+}
+.menu-list::after{
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.right-menu{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, .6);
+}
+.menus-content::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.menus{
+  margin-left: 25%;
+  width: 75%;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+.blank{
+  height: 20rpx;
+  overflow: hidden;
+}
+.header{
+  background-color: #FFFFFF;
+}
+list{
+  width: 50%;
+  float: left;
+}
+.btm-menu{
+  background-color: #FFFFFF;
+}
+.btm-menu-content{
+  padding: 24rpx 0;
+  display: flex;
+}
+.btm-menu-item{
+  flex: 1;
+  text-align: center;
+}
+.menu-txt{
+  font-size: 28rpx;
+}

@@ -1,29 +1,91 @@
-<view class='container'>
-  <view class='poster'>
-      <swiper style="height: {{height}}rpx" indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item>
-            <image bindload="imageLoad" src='{{item}}'></image>
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
-    <view class='info'>
-      <view class='price'>
-        <view class='price-txt'>12000</view>
-        <view class='check-num'>收藏9</view>
+<layout>
+  <view class='container'>
+    <view class='poster'>
+        <swiper style="height: {{height}}rpx" indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <image bindload="imageLoad" src='{{item}}'></image>
+            </swiper-item>
+          </block>
+        </swiper>
       </view>
-      <view class='title'>测试测试机</view>
-      <view class='sub-txt'>测试测试机测试测试机测试测试机测试测试机测试测试机</view>
-      <view class='visit'>
-        <user-info></user-info>
+      <view class='info'>
+        <view class='price'>
+          <view class='price-txt'>12000</view>
+          <view class='check-num'>收藏9</view>
+        </view>
+        <view class='title'>测试测试机</view>
+        <view class='sub-txt'>测试测试机测试测试机测试测试机测试测试机测试测试机</view>
+        <view class='visit'>
+          <user-info></user-info>
+        </view>
+      </view>
+      <view class='blank'></view>
+      
+      <view class='message'>
+        <view class='message-title'>留言（19）</view>
+        <view class='message-input'>
+          <view class='user-header'>
+            <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+          </view>
+          <view class='input-field'>
+            <input></input>
+            <view class='meg-button'>发表</view>
+          </view>
+        </view>
+        <view class='message-list'>
+          <view class='item'>
+            <view class='item-header'>
+              <view class='user-header'>
+              <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+              <view class='nickname'>测试</view>
+              </view>
+              <view class='add-time'>2018-01-02 20:00:00</view>
+            </view>
+            <view class='item-content'>这是一条测试！这是一条测试！这是一条测试！这是一条测试！</view>
+          </view>
+          <view class='item'>
+            <view class='item-header'>
+              <view class='user-header'>
+              <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+              <view class='nickname'>测试</view>
+              </view>
+              <view class='add-time'>2018-01-02 20:00:00</view>
+            </view>
+            <view class='item-content'>这是一条测试！这是一条测试！这是一条测试！这是一条测试！</view>
+          </view>
+          <view class='item'>
+            <view class='item-header'>
+              <view class='user-header'>
+              <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+              <view class='nickname'>测试</view>
+              </view>
+              <view class='add-time'>2018-01-02 20:00:00</view>
+            </view>
+            <view class='item-content'>这是一条测试！这是一条测试！这是一条测试！这是一条测试！</view>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view slot="footer" class='footer-menu'>
+    <view class='menu-content'>
+      <navigator class='menu-list' url="/pages/index/index">
+        <image src="/asserts/i/home.png"></image>
+        <view class='menu-txt'>首页</view>
+      </navigator>
+      <view class='menu-list'>
+        <image src="/asserts/i/share.png"></image>
+        <view class='menu-txt'>分享</view>
+      </view>
+      <view class='menu-list'>
+        <image src="/asserts/i/heart.png"></image>
+        <view class='menu-txt'>收藏</view>
       </view>
     </view>
-    
-    <view class='message'>
-      <view class='message-title'>留言（19）</view>
-      <view class='message-input'></view>
-      <view class='message-list'></view>
+    <view class='contact'>
+      <image src='/asserts/i/wechat-fill.png'></image>
+      <view class='contact-txt'>客服</view>
     </view>
-</view>
+  </view>
+</layout>

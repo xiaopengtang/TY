@@ -1,0 +1,12 @@
+<view class="layout">
+  <view class='header'>
+    <slot name="header"></slot>
+  </view>
+  <view class='body'>
+    <slot></slot>
+  </view>
+  <view class='footer'>
+    <slot name="footer"></slot>
+  </view>
+  <slot name="modal"></slot>
+</view>

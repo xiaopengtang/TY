@@ -1,0 +1,6 @@
+<view class='menu-item'>
+    <view class='menu-item-content'>
+      <image src="/asserts/i/home.png"></image>
+      <view class='menu-txt'>测试</view>
+    </view>
+  </view>
