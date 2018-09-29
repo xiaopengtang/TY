@@ -1,31 +1,15 @@
-input{
-  font-size: 28rpx;
-  background-color: #FFFFFFFF;
-  padding: 10rpx;
-}
-.form-dield{
-  /* display: flex; */
-  height: 100%;
-  width: 100%;
-  padding: 24rpx 30rpx;
-}
-.form{
-  height: 100%;
-}
-form{
-  flex-direction: column;
-  justify-content: space-between;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
 .input-group{
-  width: 100%;
-}
-.btn-area{
-  padding-top: 24rpx; 
+  background-color: #FFFFFF;
+  padding: 0 30rpx;
+  box-shadow: 6rpx 6rpx 10rpx #e6e6e6;
 }
 .section__title{
-  padding: 10rpx 0;
   font-size: 28rpx;
+}
+input{
+  font-size: 24rpx;
+  padding: 12rpx 0;
+}
+.section:not(:last-child){
+  border-bottom: 2rpx solid #e6e6e6;
 }

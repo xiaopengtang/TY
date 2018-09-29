@@ -1,0 +1,7 @@
+.mess{
+  background-color: #FFF;
+  padding: 24rpx 30rpx;
+  box-shadow: 6rpx 6rpx 10rpx #e6e6e6;
+  font-size: 28rpx;
+  line-height: 1.4;
+}

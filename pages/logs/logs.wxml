@@ -1,4 +1,0 @@
-<layout>
-  <view>hello world</view>
-  <view slot="footer">bottom</view>
-</layout>

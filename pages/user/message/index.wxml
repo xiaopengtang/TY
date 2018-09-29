@@ -1,0 +1,25 @@
+<layout>
+  <view class='mess-list'>
+    <navigator url='/pages/user/messagecontent/index' hover-class="none" class='mess-item'>
+      <view class='content-txt'>我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息</view>
+      <view class='sub-info'>
+        <view class='add-time'>2018-03-04 08:30:00</view>
+        <view class='from'>类型：系统通知</view>
+      </view>
+    </navigator>
+    <navigator url='/pages/user/messagecontent/index' hover-class="none" class='mess-item'>
+      <view class='content-txt'>我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息</view>
+      <view class='sub-info'>
+        <view class='add-time'>2018-03-04 08:30:00</view>
+        <view class='from'>类型：系统通知</view>
+      </view>
+    </navigator>
+    <navigator url='/pages/user/messagecontent/index' hover-class="none" class='mess-item'>
+      <view class='content-txt'>我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息我的消息</view>
+      <view class='sub-info'>
+        <view class='add-time'>2018-03-04 08:30:00</view>
+        <view class='from'>类型：系统通知</view>
+      </view>
+    </navigator>
+  </view>
+</layout>

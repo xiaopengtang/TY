@@ -1,6 +1,6 @@
-<view class='menu-item'>
-    <view class='menu-item-content'>
-      <image src="/asserts/i/home.png"></image>
-      <view class='menu-txt'>测试</view>
-    </view>
+<navigator hover-class="none" class='menu-item' url='/pages/home/list/list'>
+  <view class='menu-item-content'>
+    <image src="/asserts/i/home.png"></image>
+    <view class='menu-txt'>测试</view>
   </view>
+</navigator>

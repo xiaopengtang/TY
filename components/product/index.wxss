@@ -1,0 +1,39 @@
+.list{
+  background: #FFF;
+  padding: 0 30rpx;
+}
+
+.item{
+  padding: 20rpx 0;
+  display: flex;
+}
+.item:not(:last-child){
+  padding-top: 0;
+  border-bottom: 2rpx solid #e6e6e6;
+}
+.poster{
+  overflow: hidden;
+}
+.poster image{
+  vertical-align: bottom;
+  width: 128rpx;
+  height: 128rpx;
+}
+.info{
+  padding-left: 20rpx;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-size: 28rpx;
+}
+.price{
+  font-size: 32rpx;
+  color: orange;
+}

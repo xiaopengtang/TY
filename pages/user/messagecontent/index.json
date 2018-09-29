@@ -2,5 +2,5 @@
   "usingComponents": {
     "layout": "/components/layout/layout"
   },
-  "navigationBarTitleText": "注册"
+  "navigationBarTitleText": "消息内容"
 }

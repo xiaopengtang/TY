@@ -1,0 +1,72 @@
+.item{
+  overflow: hidden;
+  font-size: 28rpx;
+  box-shadow: 6rpx 6rpx 10rpx #e9eaf1;
+}
+.item-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-content{
+  padding: 24rpx 16rpx;
+  margin: 10rpx;
+  background-color: #FFFFFF;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.poster{
+  max-width: 100%;
+  padding-top: 30rpx;
+  height: auto;
+}
+.poster image{
+  vertical-align: bottom;
+  max-width: 100%;
+  max-height: 100%
+}
+.btn-area{
+  padding-top: 24rpx;
+}
+.sub-text{
+  padding-top: 30rpx;
+  line-height: 1.2;
+  font-size: 24rpx;
+}
+.price{
+  padding-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-txt{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 32rpx;
+  font-weight: bold;
+ 
+  color: red;
+}
+.price-time{
+  font-size: 24rpx;
+}
+.city{
+  color: blue;
+  font-size: 24rpx;
+}
+.user-info image{
+  
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 48rpx;
+}
+
+.user-nickname{
+  padding-left: 10rpx;
+  font-size: 24rpx;
+}

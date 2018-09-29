@@ -58,10 +58,7 @@
 .header{
   background-color: #FFFFFF;
 }
-list{
-  width: 50%;
-  float: left;
-}
+
 .btm-menu{
   background-color: #FFFFFF;
 }

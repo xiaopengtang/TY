@@ -12,7 +12,6 @@
   <view class='blank'></view>
   <view class='list'>
     <list></list>
-    <list></list>
   </view>
   <view slot="modal" class='right-menu'>
     <view class='menus'>
@@ -26,15 +25,15 @@
   </view>
   <view slot="footer" class='btm-menu'>
     <view class='btm-menu-content'>
-      <view class='btm-menu-item'>
+      <navigator class='btm-menu-item' hover-class="none" url='/pages/index/index'>
         <view class='menu-txt'>陶艺</view>
-      </view>
-      <view class='btm-menu-item'>
+      </navigator>
+      <navigator class='btm-menu-item' hover-class="none" url='/pages/home/publish/index'>
         <view class='menu-txt'>发布</view>
-      </view>
-      <view class='btm-menu-item'>
+      </navigator>
+      <navigator class='btm-menu-item' hover-class="none" url='/pages/user/center/index'>
         <view class='menu-txt'>我的</view>
-      </view>
+      </navigator>
     </view>
   </view>
 </layout>

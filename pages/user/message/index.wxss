@@ -1,0 +1,22 @@
+.mess-list{
+  background-color: #FFF;
+  padding: 0 30rpx;
+  box-shadow: 6rpx 6rpx 10rpx #e6e6e6;
+}
+.mess-item:not(:last-child){
+  border-bottom: 2rpx solid #e6e6e6;
+}
+.content-txt{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  padding: 24rpx 0;
+  font-size: 28rpx;
+  line-height: 1.2;
+}
+.sub-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+}

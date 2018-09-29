@@ -1,0 +1,39 @@
+<view class="container">
+  <view class='user-header'>
+    <view class='user-img'>
+      <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+      <view class='user-nickname'>小欣</view>
+    </view>
+    <view class='user-txt'>查看个人主页</view>
+  </view>
+  <view class='user-menu'>
+    <view class='menu-item'>
+      <view class='navigator-box navigator-box-show'>
+        <navigator class='navigator' url='/pages/user/message/index' hover-class="none">
+          <view class='navigator-text'>我的消息</view>
+          <view class='navigator-arrow'></view>
+        </navigator>
+      </view>
+    </view>
+    <view class='menu-item'>
+      <view class='navigator-box navigator-box-show'>
+        <navigator class='navigator' url='/pages/user/check/index' hover-class="none">
+          <view class='navigator-text'>我的收藏</view>
+          <view class='navigator-arrow'></view>
+        </navigator>
+        <navigator class='navigator'  hover-class="none">
+          <view class='navigator-text'>我的关注</view>
+          <view class='navigator-arrow'></view>
+        </navigator>
+      </view>
+    </view>
+    <view class='menu-item'>
+      <view class='navigator-box navigator-box-show'>
+        <navigator class='navigator' url='/pages/user/publish/index' hover-class="none">
+          <view class='navigator-text'>我的发布</view>
+          <view class='navigator-arrow'></view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

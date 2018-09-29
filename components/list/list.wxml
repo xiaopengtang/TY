@@ -1,17 +1,6 @@
-<view class="item">
-  <view class='item-header'>
-    <view class='user-info'>
-    <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
-      <view class='user-nickname'>小红</view>
-    </view>
-    <view class='city'>天津市</view>
-  </view>
-  <view class='poster'>
-    <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
-  </view>
-  <view class='sub-text'>测试测试测试测试测试测试测试测试测试测试测试测试测试</view>
-  <view class='price'>
-    <view class='price-txt'>1300元</view>
-    <view class='price-time'>3天前</view>
-  </view>
+<view class='list'>
+  <list-item></list-item>
+  <list-item></list-item>
+  <list-item></list-item>
+  <list-item></list-item>
 </view>

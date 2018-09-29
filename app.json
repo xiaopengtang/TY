@@ -1,20 +1,21 @@
 {
-  "pages":[
-    "pages/home/publish/index",
+  "pages": [
     "pages/index/index",
-    "pages/home/order/index",
-    "pages/home/register/index",
+    "pages/user/center/index",
     "pages/home/list/list",
-    "pages/user/index",
-    "pages/logs/logs"
-    
-    
-    
+    "pages/user/publish/index",
+    "pages/user/check/index",
+    "pages/user/message/index",
+    "pages/home/login/index",
+    "pages/user/messagecontent/index",
+    "pages/home/register/index",
+    "pages/home/publish/index",
+    "pages/home/order/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "陶艺",
+    "navigationBarTextStyle": "black"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "layout": "/components/layout/layout",
+    "product": "/components/product/index"
+  },
+  "navigationBarTitleText": "我的发布"
+}
