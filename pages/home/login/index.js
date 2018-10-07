@@ -1,4 +1,9 @@
 // pages/home/login/index.js
+
+const createModel = require('../../../model/index.js')
+
+const UserModel = createModel('user')
+
 Page({
 
   /**
@@ -62,5 +67,33 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  submit(e){
+    const form = e.detail.value
+    UserModel.login(form, {
+      name: [{ rule: 'REQUIRED', message: '请输入用户名/手机号'}],
+      password: [{ rule: 'REQUIRED', message: '请输入密码' }]
+    }).catch(title => {
+      title = typeof title === 'string' && title || '登录失败'
+      return wx.showToast({
+        title,
+        icon: 'none'
+      })
+    }).then(res => {
+      const info = res && res.data
+      if (!info) {
+        return wx.showToast({
+          title: res.message || '登录失败',
+          icon: 'none'
+        })
+      }
+      wx.showToast({
+        title: '登录成功',
+        icon: 'none',
+        success() {
+          return wx.navigateBack()
+        }
+      })
+    })
   }
 })

@@ -3,12 +3,42 @@
 //获取应用实例
 const app = getApp()
 
+const createModel = require('../../model/index.js')
+const HomeModel = createModel('home')
+const UserModel = createModel('user')
+
+// console.log({ HomeModel})
+
 Page({
   data: {
     motto: 'Hello World',
+    hot: [],
+    hotMenus: [],
+    menu: [],
+    list: [],
+    index: 1,
+    showMemuState: false,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  redirectToIndex(url){
+    wx.navigateTo({
+      url: "/pages/index/index",
+    })
+  },
+  onLoadMore(){
+    // console.log(111)
+  },
+  redirectToPublish(){
+    UserModel.canDoWhenLogin(() => wx.navigateTo({
+      url: '/pages/home/publish/index',
+    }))
+  },
+  redirectToUser(){
+    UserModel.canDoWhenLogin(() => wx.navigateTo({
+      url: '/pages/user/center/index',
+    }))
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,7 +46,27 @@ Page({
       url: '../logs/logs'
     })
   },
+  hideMenu(){
+    this.setData({
+      showMemuState: false
+    })
+  },
+  showMenu(){
+    this.setData({
+      showMemuState: true
+    })
+    // alert()
+    // console.log(111)
+  },
   onLoad: function () {
+    HomeModel.getHotList(hot => this.setData({hot}))
+    HomeModel.getMenuItems(list => {
+      const hotMenus = list.slice(0, 7)
+      return this.setData({
+        hotMenus,
+        menu: list
+      })
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

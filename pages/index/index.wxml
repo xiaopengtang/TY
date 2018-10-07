@@ -1,39 +1,41 @@
-<layout>
+<layout bind:onLoadMore="onLoadMore">
   <view class='header'>
-    <poster></poster>
+    <poster data="{{hot}}"></poster>
   </view>
   <view class='blank'></view>
   <view class='menu-list'>
-    <menu-item></menu-item>
-    <menu-item></menu-item>
-    <menu-item></menu-item>
-    <menu-item></menu-item>
-  </view>
-  <view class='blank'></view>
-  <view class='list'>
-    <list></list>
-  </view>
-  <view slot="modal" class='right-menu'>
-    <view class='menus'>
-      <view class='menus-content'>
-        <menu-item></menu-item>
-        <menu-item></menu-item>
-        <menu-item></menu-item>
-        <menu-item></menu-item>
+    <menu-item wx:for="{{hotMenus}}" wx:key="{{index}}" data="{{item}}"></menu-item>
+    <view class='menu-item' bindtap="showMenu">
+      <view class='menu-item-content'>
+        <image src="/asserts/i/app-store-fill.png"></image>
+        <view class='menu-txt'>全部</view>
       </view>
     </view>
   </view>
+  <view class='blank'></view>
+  <view class='list'>
+    <list data='{{list}}'></list>
+  </view>
+  <block wx:if="{{showMemuState}}">
+    <view slot="modal" class='right-menu' bindtap="hideMenu">
+      <view class='menus'>
+        <view class='menus-content'>
+          <menu-item wx:for="{{menu}}" wx:key="{{index}}" data="{{item}}"></menu-item>
+        </view>
+      </view>
+    </view>
+  </block>
   <view slot="footer" class='btm-menu'>
     <view class='btm-menu-content'>
-      <navigator class='btm-menu-item' hover-class="none" url='/pages/index/index'>
+      <view class='btm-menu-item' bindtap="redirectToIndex">
         <view class='menu-txt'>陶艺</view>
-      </navigator>
-      <navigator class='btm-menu-item' hover-class="none" url='/pages/home/publish/index'>
+      </view>
+      <view class='btm-menu-item' bindtap="redirectToPublish" url='/pages/home/publish/index'>
         <view class='menu-txt'>发布</view>
-      </navigator>
-      <navigator class='btm-menu-item' hover-class="none" url='/pages/user/center/index'>
+      </view>
+      <view class='btm-menu-item' bindtap="redirectToUser" url='/pages/user/center/index'>
         <view class='menu-txt'>我的</view>
-      </navigator>
+      </view>
     </view>
   </view>
 </layout>

@@ -1,10 +1,10 @@
-<form>
+<form bindsubmit="submit">
   <layout>
     <view class='login'>
       <view class='login-content'>
         <view class='form-field'>
-          <input type='text' name="username" class='username' placeholder='请输入用户名/手机号'></input>
-          <input type='text' name="password" class='password' placeholder='请输入密码'></input>
+          <input type='text' name="name" class='username' placeholder='请输入用户名/手机号'></input>
+          <input type='text' name="password" class='password' password placeholder='请输入密码'></input>
         </view>
       </view>
     </view>

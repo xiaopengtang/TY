@@ -1,9 +1,9 @@
 <view class='poster'>
   <swiper style="height: {{height}}rpx" indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{background}}" wx:key="*this">
+    <block wx:for="{{data}}" wx:key="*this">
       <swiper-item>
-        <image bindload="imageLoad" src='{{item}}'></image>
+        <image bindload="imageLoad" src='{{item.image}}'></image>
       </swiper-item>
     </block>
   </swiper>

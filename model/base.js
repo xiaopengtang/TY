@@ -1,5 +1,6 @@
 module.exports = class {
   curl(opt, rule){
+    
     return new Promise((resolve, reject) => {
       return ((next) => {
         if(rule){
@@ -8,16 +9,25 @@ module.exports = class {
           next()
         }
       })(() => {
+        
+        const token = wx.getStorageSync('TOKEN') || null
+        const url = opt.url.replace(/^\/+/, '')
+        // console.log(url)
+        const host = 'http://127.0.0.1:3000'
         return wx.request({
-          url: opt.url,
+          url: `${host}/${url.replace(/^\/+/g, '')}`,
           data: opt.data,
-          success: resolve,
-          fail: reject
+          success: res => resolve(res.data),
+          fail: reject,
+          header: {
+            'content-type': 'application/json', // 默认值
+            token}
         })
       })
     })
   }
   validate(data, rule){
+    console.log({data,rule})
     return new Promise((resolve ,reject) => {
       if(!data){
         return resolve()
@@ -26,7 +36,7 @@ module.exports = class {
       if(keys.length === 0){
         return resolve()
       }
-      let meg = ''
+      let msg = ''
       for(let i = 0; i < keys.length; i++){
         const label = keys[i]
         const value = data[label]
@@ -34,29 +44,36 @@ module.exports = class {
         if(!Array.isArray(rules)){
           continue
         }
-        for(let j = 0; j <= rules.length; j++){
+        
+        for(let j = 0; j < rules.length; j++){
           const r = rules[j]
+          
+          if (r.rule === 'REQUIRED' && !value) {
+            console.log({ rules, r, label, keys, value, msg })
+            msg = r.message
+            break;
+          }
           if(r.rule === 'NUMBER' && !/\d+/.test(value)){
-            meg = r.message || '请输入数字'
+            msg = r.message || '请输入数字'
             break;
           }
           if (r.rule === 'TEL' && !/\d{11}/.test(value)) {
-            meg = r.message || '请输入手机号'
+            msg = r.message || '请输入手机号'
             break;
           }
           if(typeof r.rule === 'function'){
-            const message = r.rule(value)
+            const message = r.rule(value, data)
             if(message){
-              meg = message
+              msg = message
               break
             }
           }
         }
-        if(meg){
+        if(msg){
           break
         }
       }
-      meg ? reject(meg) : resolve()
+      msg ? reject(msg) : resolve()
     })
   }
 }

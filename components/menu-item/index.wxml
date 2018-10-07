@@ -1,6 +1,6 @@
-<navigator hover-class="none" class='menu-item' url='/pages/home/list/list'>
+<navigator hover-class="none" class='menu-item' url='/pages/home/list/list?id={{data.id}}'>
   <view class='menu-item-content'>
-    <image src="/asserts/i/home.png"></image>
-    <view class='menu-txt'>测试</view>
+    <image src="{{data.image}}"></image>
+    <view class='menu-txt'>{{data.name}}</view>
   </view>
 </navigator>

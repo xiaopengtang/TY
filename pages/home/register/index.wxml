@@ -5,19 +5,18 @@
     <view class='input-group'>
       <view class="section">
     
-        <input name="input" placeholder="请输入用户名" />
+        <input name="name" placeholder="请输入用户名" />
       </view>
       <view class="section">
 
-        <input name="input" placeholder="请输入密码" />
+        <input name="password" password placeholder="请输入密码" />
       </view>
       <view class="section">
 
-        <input name="input" placeholder="请输入确认密码" />
+        <input name="repassword" password placeholder="请输入确认密码" />
       </view>
       <view class="section">
-
-        <input name="input" placeholder="请输入手机号" />
+        <input name="tel" type="number" placeholder="请输入手机号" />
       </view>
     </view>
     <view class="btn-area" slot="footer">

@@ -2,9 +2,9 @@
   <view class='header'>
     <slot name="header"></slot>
   </view>
-  <view class='body'>
+  <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" class='body'>
     <slot></slot>
-  </view>
+  </scroll-view >
   <view class='footer'>
     <slot name="footer"></slot>
   </view>

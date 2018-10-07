@@ -3,10 +3,10 @@
     <view class='content'>
       <view class='top-des'>
         <view class='input-name'>
-          <input name="input" placeholder="请输入名称" />
+          <input name="title" placeholder="请输入名称" />
         </view>
         <view class='input-des'>
-          <textarea  name="input" placeholder="请输入描述"></textarea>
+          <textarea  name="description" placeholder="请输入描述"></textarea>
         </view>
         <view class='add-poster'>
           <view class='poster-item poster-img'>
@@ -27,7 +27,7 @@
       </view>
       <view class='cate'></view> -->
       <view class='price-input'>
-        <input type='text' placeholder='请输入价格'></input>
+        <input type='number' name="price" placeholder='请输入价格'></input>
       </view>
     </view>
     <view slot="footer">
