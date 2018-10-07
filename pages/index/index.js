@@ -1,4 +1,5 @@
 //index.js
+// const utils = require('../../utils/util.js')
 //获取应用实例
 const app = getApp()
 
