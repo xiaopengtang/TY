@@ -1,0 +1,9 @@
+.menu-list{
+  padding: 24rpx 30rpx;
+  background-color: #FFFFFF;
+}
+.menu-list::after{
+  display: block;
+  clear: both;
+  content: "";
+}

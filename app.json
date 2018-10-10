@@ -1,6 +1,9 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "pages/user/subscribe/index",
+    "pages/home/category/index",
     "pages/user/center/index",
     "pages/home/list/list",
     "pages/user/publish/index",

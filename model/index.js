@@ -2,7 +2,8 @@
 
 const Pages = {
   home: require('./home.js'),
-  user: require('./user.js')
+  user: require('./user.js'),
+  collect: require('./collect')
 }
 
 module.exports = (id, opt) => {

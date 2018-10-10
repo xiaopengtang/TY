@@ -52,11 +52,9 @@ Page({
     })
   },
   showMenu(){
-    this.setData({
-      showMemuState: true
+    wx.navigateTo({
+      url: '/pages/home/category/index',
     })
-    // alert()
-    // console.log(111)
   },
   onLoad: function () {
     HomeModel.getHotList(hot => this.setData({hot}))

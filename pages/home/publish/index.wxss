@@ -56,6 +56,21 @@
 .price-input input{
   font-size: 24rpx;
 }
+.cate-field{
+  display: flex;
+  background-color: #FFF;
+  padding: 24rpx 30rpx;
+}
+.cate-field .cate-label{
+  font-size: 28rpx;
+  line-height: 1;
+}
+.cate-field .cate-value{
+  padding-left: 20rpx;
+  flex: 1;
+  font-size: 28rpx;
+  line-height: 1;
+}
 .poster-img image {
   width: 128rpx;
   height: 128rpx;

@@ -1,18 +1,24 @@
 // pages/user/publish/index.js
+const createModel = require('../../../model/index.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    list: [],
+    page: 1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.$model = createModel('collect')
+    console.log(this.$model)
+    this.$model.getMyCollect({page: this.page}).then(res => {
+      console.log(res)
+    })
   },
 
   /**

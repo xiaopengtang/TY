@@ -1,30 +1,18 @@
-// pages/home/publish/index.js
+// pages/user/subscribe/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cate: {
-      id: null,
-      name: ''
-    }
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(options)
-    this.setData({
-      cate: options
-    })
-  },
-  selectCate(){
-    // console.log(`/pages/home/category/index?url${this.is}`)
-    wx.redirectTo({
-      url: `/pages/home/category/index?url=/${this.is}`,
-    })
+
   },
 
   /**
@@ -74,6 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  submit(){}
+  }
 })

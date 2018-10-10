@@ -29,6 +29,11 @@
       <view class='price-input'>
         <input type='number' name="price" placeholder='请输入价格'></input>
       </view>
+      <view class='blank'></view>
+      <view class='cate-field' bindtap='selectCate'>
+        <view class='cate-label'>分类:</view>
+        <view class='cate-value'>{{cate.name}}</view>
+      </view>
     </view>
     <view slot="footer">
       <button formType="submit" type='primary'>发布</button>

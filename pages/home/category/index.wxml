@@ -1,0 +1,5 @@
+<layout>
+  <view class='menu-list'>
+    <menu-item bind:onSelect='select' wx:for="{{menu}}" wx:key="{{index}}" data="{{item}}"></menu-item>
+  </view>
+</layout>

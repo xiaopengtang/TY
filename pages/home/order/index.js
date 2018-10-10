@@ -24,6 +24,9 @@ Page({
   onLoad: function (options) {
 
   },
+  collect(){},
+  share(){
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -71,7 +74,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '测试',
+      path: '/' + this.is,
+      desc: '自定义分享描述'
+    }
   },
   imageLoad(e){
     wx.getSystemInfo({

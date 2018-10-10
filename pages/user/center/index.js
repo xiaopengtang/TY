@@ -1,4 +1,5 @@
 // pages/user/index.js
+const createModel = require('../../../model/index.js')
 Page({
 
   /**
@@ -12,7 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.$model = createModel('user')
   },
 
   /**
@@ -20,6 +21,14 @@ Page({
    */
   onReady: function () {
 
+  },
+  loginout(){
+    // console.log(this)
+    this.$model.loginout().then(res => wx.redirectTo({
+      url: '/pages/index/index',
+    })).catch(e => wx.showToast({
+      title: '退出登录失败'
+    }))
   },
 
   /**

@@ -5,11 +5,23 @@ const Base = require('./base.js')
 module.exports = class extends Base {
   getUserInfo(){
     const token = wx.getStorageSync('TOKEN')
-    console.log({ token})
-    return this.curl({
+    const USER = wx.getStorageSync('USER')
+    if (USER && token){
+      return Promise.resolve({data: USER})
+    }
+    
+    return new Promise((resolve, reject) => this.curl({
       url: '/user/getUserInfo',
       data: {token}
-    })
+    }).catch(reject).then(res => {
+      const info = res && res.data
+      if(!info){
+        return resolve(res)
+      }
+      wx.setStorageSync('USER', info)
+      wx.setStorageSync('TOKEN', info.userId)
+      return resolve(res)
+    }))
   }
 
   canDoWhenLogin(cb){
@@ -48,17 +60,14 @@ module.exports = class extends Base {
       url: '/user/login',
       data
     }, rule).catch(reject).then(res => {
-      const token = res && res.data && res.data.token
+      const token = res && res.data && res.data.userId
       wx.setStorageSync('TOKEN', token)
       resolve(res)
     }))
   }
-
+  // 
   loginout(){
-    const token = wx.getStorageSync('TOKEN')
-    return this.curl({
-      url: '/user/loginout',
-      data: {token}
-    })
+    const status = wx.removeStorageSync('TOKEN')
+    return Promise.resolve()
   }
 }

@@ -22,7 +22,7 @@
             <view class='navigator-text'>我的收藏</view>
             <view class='navigator-arrow'></view>
           </navigator>
-          <navigator class='navigator'  hover-class="none">
+          <navigator class='navigator' url='/pages/user/subscribe/index' hover-class="none">
             <view class='navigator-text'>我的关注</view>
             <view class='navigator-arrow'></view>
           </navigator>
@@ -38,6 +38,6 @@
       </view>
     </view>
   </view>
-  <button slot="footer" type="warn">退出登录</button>
+  <button slot="footer" type="warn" bindtap='loginout'>退出登录</button>
 </layout>
 

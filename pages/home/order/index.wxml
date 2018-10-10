@@ -70,15 +70,15 @@
   </view>
   <view slot="footer" class='footer-menu'>
     <view class='menu-content'>
-      <navigator class='menu-list' url="/pages/index/index">
+      <navigator hover-class="none" class='menu-list' url="/pages/index/index">
         <image src="/asserts/i/home.png"></image>
         <view class='menu-txt'>首页</view>
       </navigator>
-      <view class='menu-list'>
+      <button class='menu-list' open-type="share">
         <image src="/asserts/i/share.png"></image>
         <view class='menu-txt'>分享</view>
-      </view>
-      <view class='menu-list'>
+      </button>
+      <view class='menu-list' bindtap='collect'>
         <image src="/asserts/i/heart.png"></image>
         <view class='menu-txt'>收藏</view>
       </view>

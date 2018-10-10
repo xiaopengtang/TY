@@ -1,29 +1,35 @@
-// pages/home/publish/index.js
+const createModel = require('../../../model/index.js')
+const HomeModel = createModel('home')
+// pages/home/category/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cate: {
-      id: null,
-      name: ''
-    }
+    menu: [],
+    url: '/pages/home/list/list'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    // console.log(options)
-    this.setData({
-      cate: options
+  onLoad: function ({url}) {
+    // console.log(this, url)
+    url && this.setData({
+      url
+    })
+    HomeModel.getMenuItems(list => {
+      return this.setData({
+        menu: list
+      })
     })
   },
-  selectCate(){
-    // console.log(`/pages/home/category/index?url${this.is}`)
+  select(e){
+    const id = e.detail.id
+    const name = e.detail.name
     wx.redirectTo({
-      url: `/pages/home/category/index?url=/${this.is}`,
+      url: `${this.data.url}?cateid=${id}&name=${name}`
     })
   },
 
@@ -74,6 +80,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  submit(){}
+  }
 })

@@ -1,0 +1,34 @@
+<layout>
+  <view class='user'>
+    <view class='item'>
+      <view class='user-info'>
+         <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+         <view class='user-sub'>
+           <view class='user-name'>小花</view>
+           <view class='user-place'>南京-江苏</view>
+         </view>
+      </view>
+      <view class='subscribe'></view>
+    </view>
+    <view class='item'>
+      <view class='user-info'>
+         <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+         <view class='user-sub'>
+           <view class='user-name'>小花</view>
+           <view class='user-place'>南京-江苏</view>
+         </view>
+      </view>
+      <view class='subscribe active'></view>
+    </view>
+    <view class='item'>
+      <view class='user-info'>
+         <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+         <view class='user-sub'>
+           <view class='user-name'>小花</view>
+           <view class='user-place'>南京-江苏</view>
+         </view>
+      </view>
+      <view class='subscribe'></view>
+    </view>
+  </view>
+</layout>
