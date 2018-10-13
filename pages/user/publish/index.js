@@ -1,4 +1,4 @@
-// pages/user/publish/index.js
+// pages/user/check/index.js
 const createModel = require('../../../model/index.js')
 Page({
 
@@ -6,8 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [],
-    page: 1
+
   },
 
   /**
@@ -16,8 +15,13 @@ Page({
   onLoad: function (options) {
     this.$model = createModel('collect')
     console.log(this.$model)
-    this.$model.getMyCollect({page: this.page}).then(res => {
-      console.log(res)
+    this.$model.getMyCollect({ page: this.page }).then(res => {
+      // console.log(res)
+      const list = res && res.data && res.data.colList
+      if (!Array.isArray(list)) {
+        return
+      }
+      this.setData({ list })
     })
   },
 
