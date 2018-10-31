@@ -9,13 +9,13 @@
           <textarea  name="description" placeholder="请输入描述"></textarea>
         </view>
         <view class='add-poster'>
-          <view class='poster-item poster-img'>
-            <view class='close-btn'>
+          <view class='poster-item poster-img' wx:for="{{poster}}" wx:key="index">
+            <view class='close-btn' bindtap='delPoster' data-info="{{item}}" data-index="{{index}}">
               <image src="/asserts/i/close-circle-fill.png"></image>
             </view>
-            <image src="https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132"></image>
+            <image mode='aspectFit' src="{{item.url}}"></image>
           </view>
-          <view class='add-btn poster-item'>
+          <view class='add-btn poster-item' bindtap='saveFile'>
             <image src='/asserts/i/plus-circle.png'></image>
             <view class='up-btn-txt'>添加</view>
           </view>
@@ -34,6 +34,7 @@
         <view class='cate-label'>分类:</view>
         <view class='cate-value'>{{cate.name}}</view>
       </view>
+     
     </view>
     <view slot="footer">
       <button formType="submit" type='primary'>发布</button>

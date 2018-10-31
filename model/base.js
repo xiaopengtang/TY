@@ -13,7 +13,9 @@ module.exports = class {
         const token = wx.getStorageSync('TOKEN') || null
         const url = opt.url.replace(/^\/+/, '')
         // console.log(url)
-        const host = 'http://106.15.201.3:3000'
+        // const host = 'http://106.15.201.3:3000'
+        const host = 'http://127.0.0.1:3000'
+        // const host = 'http://47.99.166.177:8080/wzt'
         return wx.request({
           url: `${host}/${url.replace(/^\/+/g, '')}`,
           data: opt.data,

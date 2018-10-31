@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "陶艺文化",
+  "navigationBarTitleText": "淘艺文化",
   "usingComponents": {
     "layout": "/components/layout/layout",
     "menu-item": "/components/menu-item/index",

@@ -1,0 +1,21 @@
+.list::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.item{
+  width: 50%;
+  height: 540rpx;
+  float: left;
+  overflow: hidden;
+}
+.item image{
+  vertical-align: bottom;
+  max-width: 100%;
+  /* max-width: 1750rpx; */
+  /* max-height: 100% */
+}
+.title{
+  font-size: 24rpx;
+  line-height: 1;
+}

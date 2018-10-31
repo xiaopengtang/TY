@@ -1,7 +1,9 @@
 {
   "pages": [
-    
     "pages/index/index",
+    "pages/home/notice/index",
+    "pages/home/noticeDetail/index",
+    "pages/home/test/index",
     "pages/user/subscribe/index",
     "pages/home/category/index",
     "pages/user/center/index",
@@ -18,7 +20,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "陶艺",
+    "navigationBarTitleText": "淘艺文化",
     "navigationBarTextStyle": "black"
   }
 }

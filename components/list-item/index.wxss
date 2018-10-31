@@ -1,5 +1,6 @@
 .item{
   overflow: hidden;
+  /* height: 630rpx; */
   font-size: 28rpx;
   box-shadow: 6rpx 6rpx 10rpx #e9eaf1;
 }
@@ -24,8 +25,8 @@
 }
 .poster image{
   vertical-align: bottom;
-  max-width: 100%;
-  max-height: 100%
+  max-width: 320rpx;
+  max-height: 320rpx;
 }
 .btn-area{
   padding-top: 24rpx;

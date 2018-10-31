@@ -1,7 +1,7 @@
 <view class='list'>
   <navigator url='/pages/home/order/index?id={{item.id}}' hover-class='hidden' class='item' wx:for="{{list}}" wx:key="{{index}}">
     <view class='poster'>
-      <image src="{{item.images}}"></image>
+      <image mode='aspectFit' src="{{item.images}}"></image>
     </view>
     <view class='info'>
       <view class='title'>{{item.title}}</view>

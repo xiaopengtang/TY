@@ -2,6 +2,7 @@
   
   "usingComponents": {
     "user-info": "/components/user-info/index",
-    "layout": "/components/layout/layout"
+    "layout": "/components/layout/layout",
+    "list": "/components/list/list"
   }
 }

@@ -30,6 +30,7 @@
   width: 64rpx;
   height: 64rpx;
   vertical-align: bottom;
+  
 }
 .up-btn-txt{
   font-size: 24rpx;
@@ -71,9 +72,10 @@
   font-size: 28rpx;
   line-height: 1;
 }
-.poster-img image {
+.poster-img>image {
   width: 128rpx;
   height: 128rpx;
+  background-color: #e9e9e9
 }
 .close-btn{
   position: absolute;

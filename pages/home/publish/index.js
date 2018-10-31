@@ -8,7 +8,9 @@ Page({
     cate: {
       id: null,
       name: ''
-    }
+    },
+    read: false,
+    poster: []
   },
 
   /**
@@ -26,7 +28,41 @@ Page({
       url: `/pages/home/category/index?url=/${this.is}`,
     })
   },
-
+  delPoster(e){
+    const index = e.currentTarget.dataset.index
+    let poster = this.data.poster.filter((it, i) => i !== index)
+    this.setData({ poster})
+  },
+  saveFile(){
+    let that = this
+    wx.chooseImage({
+      success: function(res) {
+        const imageSrc = res.tempFilePaths[0]
+        wx.uploadFile({
+          url: 'http://47.99.166.177:8360/upload', //仅为示例，非真实的接口地址
+          filePath: imageSrc,
+          name: 'file',
+          success(res){
+            // console.log({res})
+            const data = JSON.parse(res.data)
+            console.log({data})
+            const list = data.data || []
+            let poster = that.data.poster
+            Array.prototype.push.apply(poster, list.map(it => {
+              it.url = `http://47.99.166.177:8360/${it.path}/${it.name}`
+              return it
+            }))
+            that.setData({ poster})
+          },
+          fail(){
+            wx.showToast({
+              title: '图片上传失败'
+            })
+          }
+        })
+      },
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

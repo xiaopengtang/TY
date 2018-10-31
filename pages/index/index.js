@@ -22,9 +22,17 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  redirectToList(e){
+    const { detail} = e
+    wx.navigateTo({
+      url: "/pages/home/list/list",
+    })
+    // console.log(e)
+    // console.log(11)
+  },
   redirectToIndex(url){
     wx.navigateTo({
-      url: "/pages/index/index",
+      url: "/pages/home/notice/index",
     })
   },
   onLoadMore(){
@@ -52,6 +60,7 @@ Page({
     })
   },
   showMenu(){
+    // console.log({})
     wx.navigateTo({
       url: '/pages/home/category/index',
     })

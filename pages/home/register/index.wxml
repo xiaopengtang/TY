@@ -19,7 +19,12 @@
         <input name="tel" type="number" placeholder="请输入手机号" />
       </view>
     </view>
+    
     <view class="btn-area" slot="footer">
+      <view class='i_read'>
+        <checkbox class='read_check' value="{{read}}" checked="{{read}}"/>
+        <view class='read_text' bindtap='viewRule'>我已阅读注册条例</view>
+      </view>
       <button formType="submit" type='primary'>注册</button>
     </view>
   </layout>

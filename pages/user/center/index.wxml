@@ -5,7 +5,7 @@
         <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
         <view class='user-nickname'>小欣</view>
       </view>
-      <view class='user-txt'>查看个人主页</view>
+      <!-- <view class='user-txt'>查看个人主页</view> -->
     </view>
     <view class='user-menu'>
       <view class='menu-item'>

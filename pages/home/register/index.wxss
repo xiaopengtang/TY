@@ -13,3 +13,21 @@ input{
 .section:not(:last-child){
   border-bottom: 2rpx solid #e6e6e6;
 }
+
+.i_read{
+  padding: 20rpx 30rpx;
+  display: flex;
+  align-items: center;
+}
+.read_check{
+  font-size: 24rpx;
+  
+}
+.read_text{
+  font-size: 24rpx;
+  line-height: 1.2;
+  color: green;
+}
+.blank{
+  height: 20rpx;
+}

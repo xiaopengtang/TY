@@ -56,6 +56,9 @@ Page({
   onReachBottom: function () {
 
   },
+  more(){
+    console.log(22)
+  },
 
   /**
    * 用户点击右上角分享

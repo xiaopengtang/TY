@@ -2,18 +2,18 @@
   <view class='item-content'>
     <view class='item-header'>
       <view class='user-info'>
-      <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
-        <view class='user-nickname'>小红</view>
+      <image mode='widthFix' src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+        <view class='user-nickname'>{{data.userName}}</view>
       </view>
-      <view class='city'>天津市</view>
+      <view class='city'>南京市</view>
     </view>
     <view class='poster'>
-      <image src='https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'></image>
+      <image mode='aspectFit' src='{{data.images}}'></image>
     </view>
-    <view class='sub-text'>测试测试测试测试测试测试测试测试测试测试测试测试测试</view>
+    <view class='sub-text'>{{data.title}}</view>
     <view class='price'>
-      <view class='price-txt'>1300元</view>
-      <view class='price-time'>3天前</view>
+      <view class='price-txt'>{{data.price}}元</view>
+      <!-- <view class='price-time'>3天前</view> -->
     </view>
   </view>
 </navigator>

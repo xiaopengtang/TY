@@ -1,0 +1,13 @@
+<layout>
+  <view class='list'>
+    <navigator class='item' url='/pages/home/noticeDetail/index' wx:for="{{list}}" wx:key="index" hover-class='none'>
+      <view class='content'>
+        <view class='news-text'>{{item.title}}</view>
+        <view class='poster' wx:if="item.images">
+          <image wx:for="{{item.images}}" wx:key="i" wx:for-item="it" mode='widthFix' src='{{it}}'></image>
+        </view>
+      </view>
+      <view class='footer-txt'>{{item.pubTime}}</view>
+    </navigator>
+  </view>
+</layout>

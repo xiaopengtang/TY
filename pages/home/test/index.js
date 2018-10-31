@@ -1,5 +1,4 @@
-// pages/user/check/index.js
-const createModel = require('../../../model/index.js')
+// pages/home/test/index.js
 Page({
 
   /**
@@ -13,16 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.$model = createModel('collect')
-    console.log(this.$model)
-    this.$model.getMyCollect({ page: this.page }).then(res => {
-      // console.log(res)
-      const list = res && res.data && res.data.colList
-      if (!Array.isArray(list)){
-        return
-      }
-      this.setData({list})
-    })
+
   },
 
   /**
@@ -66,7 +56,6 @@ Page({
   onReachBottom: function () {
 
   },
-  
 
   /**
    * 用户点击右上角分享

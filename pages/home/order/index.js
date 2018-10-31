@@ -6,16 +6,28 @@ Page({
    */
   data: {
     background: [
-      'https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132',
-      'https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132',
-      'https://wx.qlogo.cn/mmopen/vi_32/Q6x99VxceL0a700G1R1d6SHdxO2TXDrb44PLnANDamcu56v72icCxW9cfUSqKUQtKq2VL1oxq9KcVEvsOQ31tVA/132'
+      'http://47.99.166.177:8360/static/source/2018-10-27/4dc109e148e9ed590b46555641a4f1e5.jpg'
     ],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
     interval: 2000,
     duration: 500,
-    height: 0
+    height: 0,
+    data: {
+      "id": 1,                                     	// 我的收藏id
+      "userId": 10000,                          		// 用户id_对应user_info表的id
+      "collectionUserId": 10000,						// 用户id_藏品发布人Id
+      "collectionUserName": "liangge",				// 用户名_藏品发布人昵称
+      "collectionId": 1,								// 藏品id
+      "title": "第四套人民币大全套",							// 藏品标题
+      "desc": "第四套人民币大全套!!",					// 藏品简介
+      "images": ['http://47.99.166.177:8360/static/source/2018-10-27/4dc109e148e9ed590b46555641a4f1e5.jpg'], // 图片地址，多个用逗号隔开
+      "price": 13800,									// 藏品价格
+      "unit": "美元",								// 藏品单位
+      "pubTime": "2018-09-09 10:10:10.0",			// 添加时间
+      "flag": 0
+    }
   },
 
   /**

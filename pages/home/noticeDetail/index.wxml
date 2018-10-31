@@ -1,0 +1,17 @@
+<layout>
+  <view class='content'>
+    <!-- <view class='title'>第二套至第五套人民币发行与回收年表</view> -->
+      <view class='sub-title'>
+        <text class='cate'>{{data.userName}}</text>
+        <text class='time'>{{data.pubTime}}</text>
+      </view>
+      <view class='poster' wx:if="data.images">
+        <swiper>
+          <swiper-item wx:for="{{data.images}}" wx:key='index'>
+            <image mode='aspectFit' src='{{item}}'></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class='text'>{{data.text}}</view>
+  </view>
+</layout>

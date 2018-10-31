@@ -31,15 +31,15 @@ Component({
    */
   methods: {
     imageLoad(e) {
-      wx.getSystemInfo({
-        success: (res) => {
-          const { screenWidth } = res
-          const { height } = this.data
-          if (e.detail.height > height) {
-            return this.setData({ height: e.detail.height * (screenWidth / e.detail.width) })
-          }
-        }
-      })
+      // wx.getSystemInfo({
+      //   success: (res) => {
+      //     const { screenWidth } = res
+      //     const { height } = this.data
+      //     if (e.detail.height > height) {
+      //       return this.setData({ height: e.detail.height * (screenWidth / e.detail.width) })
+      //     }
+      //   }
+      // })
     }
   }
 })

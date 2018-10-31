@@ -10,7 +10,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    read: false
   },
 
   /**
@@ -19,7 +19,14 @@ Page({
   onLoad: function (options) {
 
   },
-
+  viewRule() {
+    wx.showModal({
+      title: '提示',
+      content: '所有所有所有所有所有所有所有所有所有所有所有所有',
+      showCancel: false,
+      confirmText: '我知道了'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

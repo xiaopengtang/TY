@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "list": "/components/list/list"
+    "list": "/components/list/list",
+    "layout": "/components/layout/layout"
   },
-  "navigationBarTitleText": "陶艺"
+  "navigationBarTitleText": "淘艺文化"
 }

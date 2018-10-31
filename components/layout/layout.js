@@ -25,6 +25,7 @@ Component({
       this.triggerEvent('onRefresh')
     },
     lower() {
+      console.log(11)
       this.triggerEvent('onLoadMore')
     }
   }

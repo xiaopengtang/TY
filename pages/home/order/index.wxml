@@ -1,29 +1,29 @@
 <layout>
   <view class='container'>
-    <view class='poster'>
-        <swiper style="height: {{height}}rpx" indicator-dots="{{indicatorDots}}"
+    <view class='poster' wx:if="data.images">
+        <swiper indicator-dots="{{indicatorDots}}"
           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-          <block wx:for="{{background}}" wx:key="*this">
+          <block wx:for="{{data.images}}" wx:key="*this">
             <swiper-item>
-              <image bindload="imageLoad" src='{{item}}'></image>
+              <image mode='aspectFit' bindload="imageLoad" src='{{item}}'></image>
             </swiper-item>
           </block>
         </swiper>
       </view>
       <view class='info'>
         <view class='price'>
-          <view class='price-txt'>12000</view>
-          <view class='check-num'>收藏9</view>
+          <view class='price-txt'>{{data.price}}元</view>
+          <!-- <view class='check-num'>收藏9</view> -->
         </view>
-        <view class='title'>测试测试机</view>
-        <view class='sub-txt'>测试测试机测试测试机测试测试机测试测试机测试测试机</view>
+        <view class='title'>{{data.title}}</view>
+        <view class='sub-txt'>{{data.desc}}</view>
         <view class='visit'>
           <user-info></user-info>
         </view>
       </view>
       <view class='blank'></view>
       
-      <view class='message'>
+      <!-- <view class='message'>
         <view class='message-title'>留言（19）</view>
         <view class='message-input'>
           <view class='user-header'>
@@ -66,6 +66,10 @@
             <view class='item-content'>这是一条测试！这是一条测试！这是一条测试！这是一条测试！</view>
           </view>
         </view>
+      </view> -->
+      <view class='list'>
+        <view class='list-title'>推荐</view>
+        <list></list>
       </view>
   </view>
   <view slot="footer" class='footer-menu'>

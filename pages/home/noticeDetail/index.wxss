@@ -1,0 +1,39 @@
+.title{
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  line-height: 1.2;
+  text-align: center;
+}
+.sub-title{
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  line-height: 1.2;
+  color: gray;
+  text-align: center;
+}
+.text{
+  font-size: 28rpx;
+  line-height: 1.2;
+  padding: 20rpx;
+}
+.content{
+  background-color: #FFF;
+  padding: 0 30rpx;
+}
+.cate{
+  color: blue;
+  padding-right: 20rpx;
+}
+.poster{
+  padding-bottom: 20rpx;
+}
+swiper{
+  height: 320rpx;
+}
+swiper-item{
+  height: 320rpx;
+}
+swiper-item image{
+  height: 320rpx;
+  width: 100%;
+}
